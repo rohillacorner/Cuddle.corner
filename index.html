@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="Coloring:red;"style> Cuddle Corner Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #800080;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff6f61;
+        }
+
+        .class-button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .class-button:hover {
+            background-color: <div id="red"></div>;
+        }
+
+        .class-details {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ff6f61;
+            border-radius: 5px;
+        }
+
+        .class-details h3 {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cuddle Corner Classes</h1>
+        
+        <button class="class-button" onclick="showDetails('playgroup')">Play Group</button>
+        <button class="class-button" onclick="showDetails('nursery')">Nursery</button>
+        <button class="class-button" onclick="showDetails('kg')">KG (Kindergarten)</button>
+        <button class="class-button" onclick="showDetails('class1')">Class 1</button>
+        <button class="class-button" onclick="showDetails('class2')">Class 2</button>
+        <button class="class-button" onclick="showDetails('class3')">Class 3</button>
+        <button class="class-button" onclick="showDetails('class4')">Class 4</button>
+        <button class="class-button" onclick="showDetails('class5')">Class 5</button>
+        <button class="class-button" onclick="showDetails('class6')">class 6</button>
+        <div id="playgroup" class="class-details">
+            <h3>Play Group</h3>
+            <p>Age Group: 1.5 - 2.5 years</p>
+            <p>Activities: Singing, Coloring, Basic Motor Skills</p>
+        </div>
+
+        <div id="nursery" class="class-details">
+            <h3>Nursery</h3>
+            <p>Age Group: 2.5 - 3.5 years</p>
+            <p>Activities: Storytelling, Art & Craft, Basic Literacy</p>
+        </div>
+
+        <div id="kg" class="class-details">
+            <h3>KG (Kindergarten)</h3>
+            <p>Age Group: 3.5 - 4.5 years</p>
+            <p>Activities: Reading, Writing, Counting, Playtime</p>
+        </div>
+
+        <div id="class1" class="class-details">
+            <h3>Class 1</h3>
+            <p>Age Group: 5 - 6 years</p>
+            <p>Activities: Reading, Math, Science, Arts</p>
+        </div>
+
+        <div id="class2" class="class-details">
+            <h3>Class 2</h3>
+            <p>Age Group: 6 - 7 years</p>
+            <p>Activities: Advanced Math, Reading, Writing, Physical Education</p>
+        </div>
+
+        <div id="class3" class="class-details">
+            <h3>Class 3</h3>
+            <p>Age Group: 7 - 8 years</p>
+            <p>Activities: Math, Science, Art, Computer Skills</p>
+        </div>
+
+        <div id="class4" class="class-details">
+            <h3>Class 4</h3>
+            <p>Age Group: 8 - 9 years</p>
+            <p>Activities: Math, Science, Geography, Arts & Crafts</p>
+        </div>
+
+        <div id="class5" class="class-details">
+            <h3>Class 5</h3>
+            <p>Age Group: 9 - 10 years</p>
+            <p>Activities: Advanced Math, Science, Computer Skills, Language Learning</p>
+        </div>
+
+        <div id="class6" class="class-details">
+             <h3>Class 6</h3>
+             <p>Age group: 11 - 12 years</p>
+             <p>Activities: Advanced Math, Science, Computer Skills, Language learning</p>
+        </div>
+    </div>
+
+    <script>
+        function showDetails(classId) {
+            // Hide all class details
+            var details = document.querySelectorAll('.class-details');
+            details.forEach(function(detail) {
+                detail.style.display = 'none';
+            });
+            
+            // Show the selected class details
+            document.getElementById(classId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

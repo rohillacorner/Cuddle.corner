@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6f61;
+}
+
+.class-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.class-button:hover {
+    background-color: #ff8b79;
+}
+
+.class-details {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ff6f61;
+    border-radius: 5px;
+}
+
+.class-details::before {
+    content: attr(id);
+    font-size: 1.5em;
+    color: #ff6f61;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#playgroup::before {
+    content: 'Play Group\nAge Group: 1.5 - 2.5 years\nActivities: Singing, Coloring, Basic Motor Skills';
+}
+
+#nursery::before {
+    content: 'Nursery\nAge Group: 2.5 - 3.5 years\nActivities: Storytelling, Art & Craft, Basic Literacy';
+}
+
+#kg::before {
+    content: 'KG (Kindergarten)\nAge Group: 3.5 - 4.5 years\nActivities: Reading, Writing, Counting, Playtime';
+}
+
+#class1::before {
+    content: 'Class 1\nAge Group: 5 - 6 years\nActivities: Reading, Math, Science, Arts';
+}
+
+#class2::before {
+    content: 'Class 2\nAge Group: 6 - 7 years\nActivities: Advanced Math, Reading, Writing, Physical Education';
+}
+
+#class3::before {
+    content: 'Class 3\nAge Group: 7 - 8 years\nActivities: Math, Science, Art, Computer Skills';
+}
+
+#class4::before {
+    content: 'Class 4\nAge Group: 8 - 9 years\nActivities: Math, Science, Geography, Arts & Crafts';
+}
+
+#class5::before {
+    content: 'Class 5\nAge Group: 9 - 10 years\nActivities: Advanced Math, Science, Computer Skills, Language Learning';
+}
